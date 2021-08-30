@@ -2,10 +2,7 @@ package com.zhs.pdf2image.controller;
 
 import com.aspose.pdf.*;
 import com.aspose.pdf.devices.JpegDevice;
-import com.aspose.pdf.devices.Resolution;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
-import com.zhs.pdf2image.model.ImageBO;
+
 import com.zhs.pdf2image.model.Result;
 import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnails;
@@ -15,15 +12,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
-import java.time.Month;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+
 
 /**
  * @author: zhs
